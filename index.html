@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jardin de Saison — Primeur &amp; épicerie asiatique, Paris 15ᵉ</title>
+<meta name="description" content="Jardin de Saison, primeur et épicerie asiatique au 98 rue Saint-Charles, Paris 15ᵉ : fruits et légumes de saison, herbes fraîches et produits d'Asie. Click &amp; collect, ouvert de 8h30 à 20h.">
+<meta name="theme-color" content="#5f7d0e">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="home">
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============================ BARRE FLOTTANTE ============================ -->
+<div class="topnav" id="topnav">
+  <a href="#top" class="brand">
+    <span class="logo-dot logo-40"><img src="assets/logo.png" alt=""></span>
+    Jardin de Saison
+  </a>
+  <div class="topnav-right">
+    <nav class="topnav-links" aria-label="Sections">
+      <a href="#etals">Étals</a>
+      <a href="#saison">Saisons</a>
+      <a href="#asie">Rayon Asie</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <span class="topnav-status"><span class="dot" data-open-dot></span><span data-open-label>Horaires</span></span>
+    <button class="burger" data-menu-open aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <a href="panier.html" class="topnav-cart" data-cartbtn>Panier<span class="count" data-count>0</span></a>
+  </div>
+</div>
+
+<!-- ============================ MENU PLEIN ÉCRAN ============================ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="menu-top">
+    <span class="logo-dot logo-64"><img src="assets/logo.png" alt="Jardin de Saison"></span>
+    <button class="menu-close" data-menu-close aria-label="Fermer le menu">×</button>
+  </div>
+  <nav class="menu-links">
+    <a href="#etals"><span>01</span>Étals</a>
+    <a href="#saison"><span>02</span>Saisons</a>
+    <a href="#asie"><span>03</span>Rayon Asie</a>
+    <a href="#visite"><span>04</span>Nous trouver</a>
+    <a href="panier.html"><span>05</span>Panier</a>
+  </nav>
+  <p class="menu-foot">Primeur &amp; épicerie asiatique · 98 rue Saint-Charles</p>
+</div>
+
+<!-- ============================ ACCUEIL ============================ -->
+<header id="top" class="hero">
+  <div class="hero-frame">
+    <div class="hero-zoom" id="heroZoom">
+      <div class="hero-media" id="heroMedia">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3xHFRGPHriTx9Y0MVREhqs_FzovPcL629tt5DNMgFeRHyHtULSVh5wLnTxXL7_vx0mu9cX-KlAtEn0-OjRheoqiGDA4RQPwGmiOToWHRnLtTdhoz2Cp7HwV851FbQt5w4OTqo8UaICPO6=w1600-h2133-k-no" alt="La devanture de Jardin de Saison" fetchpriority="high">
+      </div>
+    </div>
+    <div class="hero-shade"></div>
+
+    <div class="hero-bar">
+      <button class="hero-menu" data-menu-open aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span class="lines"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+      <a href="panier.html" class="hero-cart" data-cartbtn aria-label="Voir le panier">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5f7d0e" stroke-width="2.2" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="badge" data-count>0</span>
+      </a>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-main">
+        <div data-reveal data-delay="250">
+          <span class="status-chip">
+            <span class="pulse"><span class="pulse-ring" data-open-dot></span><span class="pulse-core" data-open-dot></span></span>
+            <span data-open-label>Horaires</span>
+            <span class="sub" data-open-sub></span>
+          </span>
+        </div>
+        <div class="hero-brand" data-reveal data-delay="300">
+          <a href="#top" class="hero-logo" aria-label="Jardin de Saison"><span class="logo-dot logo-68"><img src="assets/logo.png" alt=""></span></a>
+          <p class="hero-kicker"><span class="dot dot-orange"></span>Primeur &amp; épicerie asiatique · Paris 15ᵉ</p>
+        </div>
+        <h1 class="hero-title" aria-label="Jardin de Saison">
+          <span class="hero-word" aria-hidden="true"><span data-letter>J</span><span data-letter>A</span><span data-letter>R</span><span data-letter>D</span><span data-letter>I</span><span data-letter>N</span></span>
+          <span class="hero-serif" data-reveal data-delay="600" aria-hidden="true">de saison</span>
+        </h1>
+        <p class="hero-lead" data-reveal data-delay="750">Fruits et légumes de saison, produits d'Asie et herbes fraîches, à deux pas de chez vous.</p>
+        <div class="cta-pair" data-reveal data-delay="900">
+          <a href="#etals" class="cta-pill">Commander</a>
+          <a href="#etals" class="cta-round" aria-label="Voir les étals"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5f7d0e" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <a href="#avis" class="hero-rating" data-reveal data-delay="1050">
+        <span class="avatars"><span style="background:#7b5ea7">S</span><span style="background:#1a73e8">M</span><span style="background:#d81b60">L</span></span>
+        <span class="hero-rating-text">
+          <span class="row"><strong data-rating>4,9</strong><span class="stars">★★★★★</span></span>
+          <span class="small">Note globale · avis Google</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============================ MANIFESTE + DUO ============================ -->
+<section class="intro">
+  <div class="wrap">
+    <p class="words" id="words">Un primeur de quartier et une épicerie asiatique sous le même toit. Des fruits et légumes choisis au fil des saisons, et tout ce qu'il faut pour cuisiner l'Asie à la maison.</p>
+    <div class="duo">
+      <a href="#saison" class="duo-card" data-reveal>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLtOUsy3PPaE8VV3IEy89m7nspWu0BTHlA1KrFHHrWMz7zxcbMK2QPXW2nd8VmcMFOyhut_YCYj_Uffq_-Ny945n-FiGxf-qily2B6N-1SOIUT_YfsEIoy67EC5MB_qRZc8FN-trdmMeyX=w1400-h1867-k-no" alt="L'étal de fruits et légumes" loading="lazy">
+        <span class="duo-shade"></span>
+        <span class="tag tag-cream">Fruits &amp; légumes</span>
+        <span class="duo-bottom">
+          <span>
+            <span class="duo-title">Le primeur</span>
+            <span class="duo-text">Fruits, légumes et herbes fraîches, sélectionnés selon la saison.</span>
+          </span>
+          <span class="arrow-dot arrow-orange"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </a>
+      <a href="#asie" class="duo-card duo-right" data-reveal data-delay="150">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RuWhb6lTSlwQ_zjNIZ1LG3ezFflARqsE8u5wnYCn7nn2O-kh113EGfCEHUh_sNVBWDQzo6XwEhmfyl47xZ3_zLToeY3YkU1ElATJvuagboCST65GMH9ImYorHqS6WINqJE5OqKUdeJ5Kzp=w1400-h1867-k-no" alt="Le rayon épicerie asiatique" loading="lazy">
+        <span class="duo-shade"></span>
+        <span class="tag tag-orange">Épicerie d'Asie</span>
+        <span class="duo-bottom">
+          <span>
+            <span class="duo-title">L'épicerie</span>
+            <span class="duo-text">Sauces, nouilles, riz, surgelés et snacks venus de toute l'Asie.</span>
+          </span>
+          <span class="arrow-dot arrow-white"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5f7d0e" stroke-width="2.4" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ÉTALS ============================ -->
+<section id="etals" class="sheet">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="big-title" data-reveal>Sur nos<br><em>étals</em></h2>
+        <p class="sec-lead" data-reveal data-delay="100">Composez votre panier, envoyez-le par WhatsApp ou e-mail, et passez le récupérer en boutique.</p>
+      </div>
+      <div class="shop-tools" data-reveal data-delay="150">
+        <label class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5b6340" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <span class="sr-only">Rechercher un produit</span>
+          <input type="search" id="search" placeholder="Rechercher un produit (kaki, ramen…)" autocomplete="off">
+        </label>
+        <div class="seg" id="catTabs" role="tablist" aria-label="Catégories">
+          <button role="tab" data-cat="all" class="is-on" aria-selected="true">Tout</button>
+          <button role="tab" data-cat="fruits" aria-selected="false">Fruits</button>
+          <button role="tab" data-cat="legumes" aria-selected="false">Légumes &amp; herbes</button>
+          <button role="tab" data-cat="epicerie" aria-selected="false">Épicerie</button>
+        </div>
+      </div>
+    </div>
+    <div class="empty-search" id="noResults" hidden>
+      <span class="empty-title">Aucun produit trouvé</span>
+      <span>Essayez un autre mot, ou demandez-nous en boutique : notre sélection change chaque semaine.</span>
+      <button type="button" class="btn-dark" id="clearSearch">Effacer la recherche</button>
+    </div>
+    <div class="products" id="products"></div>
+    <p class="fine">Prix indicatifs. Le montant final est confirmé par la boutique à la préparation.</p>
+  </div>
+</section>
+
+<!-- ============================ SAISONS ============================ -->
+<section id="saison" class="season">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow eyebrow-peach" data-reveal><span class="dot dot-orange"></span>Calendrier des saisons</p>
+        <h2 class="big-title big-title-season" data-reveal>Au jardin en<br><em id="monthName">octobre</em></h2>
+      </div>
+      <div class="season-tools" data-reveal data-delay="150">
+        <div class="counts">
+          <div><span class="count-num" id="nowFruits">0</span><span class="count-lbl">fruits</span></div>
+          <div><span class="count-num" id="nowVeg">0</span><span class="count-lbl">légumes</span></div>
+        </div>
+        <div class="arrows">
+          <button class="arrow-btn" id="prevMonth" aria-label="Mois précédent"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="arrow-btn" id="nextMonth" aria-label="Mois suivant"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="months" id="months" data-reveal role="tablist" aria-label="Mois"></div>
+    <div class="row-head">
+      <h3 class="small-title">À l'honneur ce mois-ci</h3>
+      <span class="hint">Faites défiler →</span>
+    </div>
+    <div class="featured" id="featured"></div>
+    <div class="row-head">
+      <h3 class="small-title">L'année en un coup d'œil</h3>
+      <div class="seg seg-green" id="calTabs">
+        <button data-calcat="fruits" class="is-on">Fruits</button>
+        <button data-calcat="legumes">Légumes</button>
+      </div>
+    </div>
+    <div class="year">
+      <div class="year-inner">
+        <div class="year-row year-head" id="yearHead"></div>
+        <div id="yearRows"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ RAYON ASIE ============================ -->
+<section id="asie" class="sheet">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal><span class="dot dot-orange"></span>L'épicerie</p>
+        <h2 class="big-title" data-reveal>Le rayon<br><em>Asie</em></h2>
+      </div>
+      <div class="asie-side" data-reveal data-delay="150">
+        <p>Les essentiels du placard et les produits plus rares, réunis dans un même rayon.</p>
+        <div class="origins"><span>Chine</span><span>Japon</span><span>Corée</span><span>Thaïlande</span><span>Vietnam</span></div>
+      </div>
+    </div>
+    <div class="aisles">
+      <a href="#etals" class="aisle aisle-wide" data-reveal data-cat-link="epicerie">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Charsiu_ramen_02.jpg/1280px-Charsiu_ramen_02.jpg" alt="Bol de ramen" loading="lazy">
+        <span class="aisle-shade"></span>
+        <span class="aisle-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="aisle-body"><span class="aisle-title">Nouilles &amp; riz</span><span class="aisle-text">Ramen, udon, soba, vermicelles, riz jasmin et riz gluant</span></span>
+      </a>
+      <a href="#etals" class="aisle" data-reveal data-cat-link="epicerie">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Soy_sauce_with_wasabi.jpg/960px-Soy_sauce_with_wasabi.jpg" alt="Sauce soja" loading="lazy">
+        <span class="aisle-shade"></span>
+        <span class="aisle-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="aisle-body"><span class="aisle-title">Sauces &amp; condiments</span><span class="aisle-text">Soja, huître, poisson, sriracha, miso, gochujang</span></span>
+      </a>
+      <a href="#etals" class="aisle" data-reveal data-delay="100" data-cat-link="legumes">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Bunches_of_coriander_leaves.jpg/960px-Bunches_of_coriander_leaves.jpg" alt="Bottes de coriandre" loading="lazy">
+        <span class="aisle-shade"></span>
+        <span class="aisle-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="aisle-body"><span class="aisle-title">Herbes fraîches</span><span class="aisle-text">Coriandre, basilic thaï, citronnelle, galanga</span></span>
+      </a>
+      <a href="#etals" class="aisle" data-reveal data-delay="200" data-cat-link="epicerie">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/S%E1%BB%A7i_c%E1%BA%A3o_%E6%B0%B4%E9%A4%83_t%E1%BA%A1i_Qu%E1%BA%A3ng_Ch%C3%A2u_%E5%BB%A3%E5%B7%9E_%282019%29_%E2%80%93_1.jpg/960px-S%E1%BB%A7i_c%E1%BA%A3o_%E6%B0%B4%E9%A4%83_t%E1%BA%A1i_Qu%E1%BA%A3ng_Ch%C3%A2u_%E5%BB%A3%E5%B7%9E_%282019%29_%E2%80%93_1.jpg" alt="Raviolis" loading="lazy">
+        <span class="aisle-shade"></span>
+        <span class="aisle-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="aisle-body"><span class="aisle-title">Surgelés</span><span class="aisle-text">Raviolis, gyozas, baos, boulettes</span></span>
+      </a>
+      <a href="#etals" class="aisle" data-reveal data-delay="300" data-cat-link="epicerie">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Loose_Jasmine_Tea_Leaves.jpg/960px-Loose_Jasmine_Tea_Leaves.jpg" alt="Feuilles de thé au jasmin" loading="lazy">
+        <span class="aisle-shade"></span>
+        <span class="aisle-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="aisle-body"><span class="aisle-title">Snacks &amp; thés</span><span class="aisle-text">Biscuits, chips de crevette, thés, boissons</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ AVIS ============================ -->
+<section id="avis" class="sheet sheet-flat">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="big-title" data-reveal>Vos<br><em>avis</em></h2>
+      <div class="avis-side" data-reveal data-delay="150">
+        <div class="avis-score">
+          <div class="row"><span class="avis-num" data-rating>4,9</span><span class="stars stars-lg">★★★★★</span></div>
+          <span class="avis-lbl">Note globale sur Google</span>
+        </div>
+        <a href="https://www.google.fr/maps/place/JARDIN+DE+SAISON/@48.8456092,2.2818993,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a017b3f105:0x3aeba31142bf6f48!8m2!3d48.8456092!4d2.2844742!16s%2Fg%2F11z73x3f35" target="_blank" rel="noopener" class="btn-arrow btn-ink">Tous les avis<span class="btn-arrow-dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+    <div class="reviews">
+      <figure class="review" data-reveal><div><span class="stars">★★★★★</span><blockquote>« Des fruits et légumes vraiment frais, et un rayon asiatique très complet. Je trouve tout pour mes recettes. »</blockquote></div><figcaption><span class="avatar" style="background:#7b5ea7">S</span><span><strong>Sophie M.</strong><small>Avis Google</small></span></figcaption></figure>
+      <figure class="review" data-reveal data-delay="100"><div><span class="stars">★★★★★</span><blockquote>« Accueil chaleureux, produits de qualité et prix corrects. Mon primeur de quartier. »</blockquote></div><figcaption><span class="avatar" style="background:#1a73e8">K</span><span><strong>Karim B.</strong><small>Avis Google</small></span></figcaption></figure>
+      <figure class="review" data-reveal data-delay="200"><div><span class="stars">★★★★★</span><blockquote>« Enfin des herbes fraîches asiatiques à côté de chez moi : basilic thaï, citronnelle, coriandre. »</blockquote></div><figcaption><span class="avatar" style="background:#d81b60">L</span><span><strong>Linh T.</strong><small>Avis Google</small></span></figcaption></figure>
+      <figure class="review" data-reveal><div><span class="stars">★★★★★</span><blockquote>« Les mangues et les litchis sont excellents. Boutique propre et bien rangée. »</blockquote></div><figcaption><span class="avatar" style="background:#00897b">J</span><span><strong>Julien R.</strong><small>Avis Google</small></span></figcaption></figure>
+      <figure class="review" data-reveal data-delay="100"><div><span class="stars">★★★★★</span><blockquote>« Grand choix de sauces et de nouilles, et de bons conseils. Je recommande. »</blockquote></div><figcaption><span class="avatar" style="background:#f4511e">M</span><span><strong>Mei L.</strong><small>Avis Google</small></span></figcaption></figure>
+      <figure class="review" data-reveal data-delay="200"><div><span class="stars">★★★★★</span><blockquote>« Toujours de beaux produits de saison. On sent que la sélection est faite avec soin. »</blockquote></div><figcaption><span class="avatar" style="background:#5c6bc0">C</span><span><strong>Claire D.</strong><small>Avis Google</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="sec-head services-head">
+      <h2 class="mid-title" data-reveal>Pour la maison, le bureau <em>et les grands jours</em></h2>
+      <p class="sec-lead" data-reveal data-delay="150">Des fruits et légumes du jour en boutique, et des préparations sur mesure dès que vous avez du monde à nourrir.</p>
+    </div>
+    <div class="service-list">
+      <div class="service" data-reveal>
+        <div class="service-id">
+          <span class="service-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLtOUsy3PPaE8VV3IEy89m7nspWu0BTHlA1KrFHHrWMz7zxcbMK2QPXW2nd8VmcMFOyhut_YCYj_Uffq_-Ny945n-FiGxf-qily2B6N-1SOIUT_YfsEIoy67EC5MB_qRZc8FN-trdmMeyX=w800-h1067-k-no" alt="" loading="lazy"></span>
+          <span class="service-name"><span class="service-title">Particuliers</span><span class="service-tag">Click &amp; collect</span></span>
+        </div>
+        <p class="service-text">Commandez en ligne, on prépare votre panier, vous le récupérez en boutique. Ou passez simplement nous voir, de 8h30 à 20h.</p>
+        <a href="#etals" class="btn-arrow btn-green service-cta">Commander en ligne<span class="btn-arrow-dot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="service" data-reveal data-delay="100">
+        <div class="service-id">
+          <span class="service-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Clementines_whole%2C_peeled%2C_half_and_sectioned.jpg/960px-Clementines_whole%2C_peeled%2C_half_and_sectioned.jpg" alt="" loading="lazy"></span>
+          <span class="service-name"><span class="service-title">Entreprises</span><span class="service-tag">Livraison</span></span>
+        </div>
+        <p class="service-text">Une corbeille de fruits frais livrée à votre équipe chaque matin, ou au rythme qui vous convient.</p>
+        <a href="#" class="btn-arrow btn-orange service-cta" data-quote="Entreprises">Demander un devis<span class="btn-arrow-dot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="service" data-reveal data-delay="200">
+        <div class="service-id">
+          <span class="service-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Grapes%2C_Dry_Creek_Valley-7705.jpg/960px-Grapes%2C_Dry_Creek_Valley-7705.jpg" alt="" loading="lazy"></span>
+          <span class="service-name"><span class="service-title">Événements</span><span class="service-tag">Sur devis</span></span>
+        </div>
+        <p class="service-text">Paniers de fruits et de légumes pour anniversaires, séminaires, cadeaux et repas de famille.</p>
+        <a href="#" class="btn-arrow btn-orange service-cta" data-quote="Événements">Demander un devis<span class="btn-arrow-dot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ COMMANDER ============================ -->
+<section id="commander" class="order">
+  <div class="wrap order-grid">
+    <div class="phone-stage" data-reveal>
+      <div class="phone" aria-hidden="true">
+        <div class="phone-head">
+          <span class="phone-avatar">J<span></span></span>
+          <span class="phone-who"><strong>Jardin de Saison</strong><small id="chatStatus">en ligne</small></span>
+          <span class="phone-step">Étape <span id="stepNum">1</span>/3</span>
+        </div>
+        <div class="phone-body" id="chat"></div>
+        <div class="phone-input"><span>Message</span><span class="phone-send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </div>
+    </div>
+    <div class="order-text">
+      <div>
+        <p class="eyebrow eyebrow-peach" data-reveal><span class="dot dot-orange"></span>Click &amp; collect</p>
+        <h2 class="big-title big-title-order" data-reveal>Commander,<br><em>simplement</em></h2>
+      </div>
+      <div class="steps" id="steps">
+        <button type="button" class="step is-on" data-step="0"><span class="step-n">01</span><span class="step-body"><span class="step-title">Remplissez votre panier</span><span class="step-text">Choisissez fruits, légumes et produits d'épicerie sur nos étals en ligne.</span></span></button>
+        <button type="button" class="step" data-step="1"><span class="step-n">02</span><span class="step-body"><span class="step-title">Envoyez la commande</span><span class="step-text">Par WhatsApp ou par e-mail, en un clic, avec votre créneau de passage.</span></span></button>
+        <button type="button" class="step" data-step="2"><span class="step-n">03</span><span class="step-body"><span class="step-title">Récupérez en boutique</span><span class="step-text">Votre commande est préparée et vous attend au comptoir.</span></span></button>
+      </div>
+      <div class="order-ctas">
+        <a href="#etals" class="cta-pill cta-pill-sm">Commencer mes courses</a>
+        <a href="panier.html" class="btn-outline">Mon panier<span class="count count-lg" data-count>0</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VISITE ============================ -->
+<section id="visite" class="visit-wrap">
+  <div class="visit" data-reveal>
+    <div class="visit-text">
+      <div class="visit-titles">
+        <p class="eyebrow eyebrow-orange-l"><span class="dot dot-orange"></span>La boutique</p>
+        <h2 class="big-title big-title-visit">Passez<br>nous <em>voir</em></h2>
+      </div>
+      <div class="visit-cards">
+        <div class="visit-card">
+          <span class="visit-k">Adresse</span>
+          <span class="visit-v" data-address>98 rue Saint-Charles, 75015 Paris</span>
+          <button type="button" class="copy-btn" id="copyAddress">Copier l'adresse</button>
+        </div>
+        <a href="tel:0142920421" class="visit-card visit-card-link" data-tel>
+          <span class="visit-k">Téléphone</span>
+          <span class="visit-phone" data-phone>01 42 92 04 21</span>
+          <span class="visit-small">Appeler la boutique</span>
+        </a>
+        <div class="visit-card">
+          <span class="visit-k">Horaires</span>
+          <span class="visit-v">Tous les jours, de 8h30 à 20h</span>
+          <span class="visit-open"><span class="dot" data-open-dot></span><span data-open-label>Horaires</span> · <span data-open-sub></span></span>
+        </div>
+      </div>
+      <div class="cta-pair">
+        <a href="https://www.google.fr/maps/place/JARDIN+DE+SAISON/@48.8456092,2.2818993,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a017b3f105:0x3aeba31142bf6f48!8m2!3d48.8456092!4d2.2844742!16s%2Fg%2F11z73x3f35" target="_blank" rel="noopener" class="cta-pill cta-pill-xl">Itinéraire</a>
+        <a href="https://www.google.fr/maps/place/JARDIN+DE+SAISON/@48.8456092,2.2818993,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a017b3f105:0x3aeba31142bf6f48!8m2!3d48.8456092!4d2.2844742!16s%2Fg%2F11z73x3f35" target="_blank" rel="noopener" class="cta-round cta-round-cream" aria-label="Ouvrir dans Google Maps"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1e2a05" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="visit-photo">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3xHFRGPHriTx9Y0MVREhqs_FzovPcL629tt5DNMgFeRHyHtULSVh5wLnTxXL7_vx0mu9cX-KlAtEn0-OjRheoqiGDA4RQPwGmiOToWHRnLtTdhoz2Cp7HwV851FbQt5w4OTqo8UaICPO6=w1600-h2133-k-no" alt="Devanture de Jardin de Saison" loading="lazy">
+      <span class="logo-dot logo-84 visit-logo"><img src="assets/logo.png" alt=""></span>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================ PIED DE PAGE ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <span class="logo-dot logo-72"><img src="assets/logo.png" alt="Jardin de Saison"></span>
+        <p>Primeur &amp; épicerie asiatique au cœur du 15ᵉ arrondissement.</p>
+      </div>
+      <nav class="footer-col"><span class="footer-k">Découvrir</span><a href="#etals">Nos étals<span>→</span></a><a href="#saison">Calendrier des saisons<span>→</span></a><a href="#asie">Rayon Asie<span>→</span></a></nav>
+      <nav class="footer-col"><span class="footer-k">Commander</span><a href="panier.html">Mon panier<span>→</span></a><a href="#commander">Comment ça marche<span>→</span></a><a href="#services">Entreprises &amp; événements<span>→</span></a></nav>
+      <div class="footer-col"><span class="footer-k">Venir</span><span class="footer-v" data-address>98 rue Saint-Charles, 75015 Paris</span><span class="footer-open"><span class="dot" data-open-dot></span><span data-open-label>Horaires</span> · 8h30 – 20h</span><a href="tel:0142920421" data-tel><span data-phone>01 42 92 04 21</span><span>→</span></a><a href="https://www.google.fr/maps/place/JARDIN+DE+SAISON/@48.8456092,2.2818993,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a017b3f105:0x3aeba31142bf6f48!8m2!3d48.8456092!4d2.2844742!16s%2Fg%2F11z73x3f35" target="_blank" rel="noopener">Itinéraire<span>→</span></a></div>
+    </div>
+    <div class="footer-giant" data-reveal aria-hidden="true">Jardin de Saison</div>
+    <div class="footer-bar"><span>© 2026 Jardin de Saison</span><a href="#top">Retour en haut ↑</a></div>
+  </div>
+</footer>
+
+<!-- ============================ PANIER FLOTTANT + TOAST ============================ -->
+<a href="panier.html" class="fab" id="fab" aria-label="Voir mon panier">
+  <span class="fab-text"><small>Mon panier</small><strong id="fabTotal">0,00 €</strong></span>
+  <span class="fab-count" data-count>0</span>
+</a>
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="toast-dot"></span>
+  <span class="toast-msg"><strong id="toastName"></strong> ajouté au panier</span>
+  <a href="panier.html" class="toast-btn">Voir le panier</a>
+</div>
+
+<script src="js/shop.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

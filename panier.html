@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Votre panier — Jardin de Saison</title>
+<meta name="description" content="Votre panier Jardin de Saison : envoyez votre commande par WhatsApp ou par e-mail, puis récupérez-la en boutique, 98 rue Saint-Charles, Paris 15ᵉ.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#5f7d0e">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="cart-page">
+
+<div class="cart-shell">
+  <header class="cart-bar">
+    <a href="index.html" class="brand brand-light">
+      <span class="logo-dot logo-40"><img src="assets/logo.png" alt=""></span>
+      Jardin de Saison
+    </a>
+    <ol class="cart-steps" id="cartSteps" aria-label="Étapes">
+      <li><span class="cart-step-n">1</span>Panier</li>
+      <li><span class="cart-step-n">2</span>Coordonnées</li>
+      <li><span class="cart-step-n">3</span>Envoi</li>
+    </ol>
+    <a href="index.html#etals" class="cart-back">← <span>Continuer mes achats</span></a>
+  </header>
+
+  <main class="cart-main">
+    <div class="cart-title-row">
+      <h1 class="cart-title">Votre <em>panier</em></h1>
+      <div class="cart-title-tools" id="titleTools" hidden>
+        <span class="pill-dark" id="countLabel">0 article</span>
+        <button type="button" class="btn-ghost" id="clearCart">Vider</button>
+      </div>
+    </div>
+
+    <!-- Panier vide -->
+    <div class="cart-empty" id="emptyView" hidden>
+      <div class="cart-empty-card">
+        <span class="cart-empty-ico"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff8a14" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+        <p class="cart-empty-title">Votre panier est vide</p>
+        <p class="cart-empty-text">Ajoutez quelques produits ci-contre, ou parcourez tous nos étals.</p>
+        <a href="index.html#etals" class="btn-solid">Voir tous les étals</a>
+      </div>
+      <div class="cart-popular">
+        <span class="label-green">Les plus demandés</span>
+        <div id="popular"></div>
+      </div>
+    </div>
+
+    <!-- Panier rempli -->
+    <div class="cart-grid" id="fullView" hidden>
+      <div class="cart-left">
+        <div class="cart-items" id="items"></div>
+        <div class="cart-suggest" id="suggestBox">
+          <span class="label-green">Souvent ajoutés ensemble</span>
+          <div class="suggest-grid" id="suggest"></div>
+        </div>
+      </div>
+
+      <aside class="cart-aside">
+        <div class="sum-card">
+          <div class="sum-row"><span>Sous-total</span><span id="subtotal">0,00 €</span></div>
+          <div class="sum-row"><span>Retrait en boutique</span><span class="sum-free">Gratuit</span></div>
+          <div class="sum-total"><span>Total indicatif</span><strong id="total">0,00 €</strong></div>
+          <span class="sum-note">Le montant final est confirmé par la boutique à la préparation.</span>
+        </div>
+
+        <form class="form-card" id="orderForm" novalidate>
+          <span class="form-title">Vos coordonnées</span>
+          <div class="form-two">
+            <label>Nom *<input id="fName" name="nom" autocomplete="name" placeholder="Votre nom" required></label>
+            <label>Téléphone<input id="fPhone" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 …"></label>
+          </div>
+          <div class="form-when">
+            <span class="form-k">Quand passez-vous ?</span>
+            <div class="slots" id="slots"></div>
+            <input id="fWhen" placeholder="Ou précisez (ex. samedi 11h)" aria-label="Créneau de passage">
+          </div>
+          <label>Une précision ?<textarea id="fNote" rows="2" placeholder="Maturité, quantité, substitution…"></textarea></label>
+          <p class="form-err" id="formErr" hidden>Indiquez votre nom pour envoyer la commande.</p>
+          <div class="send-row">
+            <a href="#" target="_blank" rel="noopener" class="send send-wa" id="sendWa"><span class="dot dot-wa"></span>WhatsApp</a>
+            <a href="#" class="send send-mail" id="sendMail">E-mail</a>
+          </div>
+          <div class="sent-box" id="sentBox" hidden>
+            <span><strong>Commande prête à l'envoi.</strong> Validez-la dans votre messagerie.</span>
+            <button type="button" class="btn-dark btn-sm" id="clearAfter">Vider</button>
+          </div>
+        </form>
+
+        <div class="pickup-card">
+          <span class="pickup-text"><strong>Retrait en boutique</strong><span data-address>98 rue Saint-Charles, 75015 Paris</span></span>
+          <a href="tel:0142920421" class="pickup-tel" data-tel><span data-phone>01 42 92 04 21</span></a>
+        </div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+<script src="js/shop.js"></script>
+<script src="js/panier.js"></script>
+</body>
+</html>
